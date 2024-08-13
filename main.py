@@ -1,3 +1,17 @@
+
+class Account():
+    def __init__(self, account_id, balance, customer_name):
+        self.account_id = account_id
+        self.balance = balance
+        self.customer_name = customer_name
+    
+
+
+
+
+
+
+
 def main():
     account = []
     num_of_accounts = 0
