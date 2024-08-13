@@ -13,7 +13,8 @@ def make_account():
     id = input()
     name = input()
     money = input()
-    account_list.append(Account(id, money, name))
+    customer = Account(id, money, name)
+    account_list.append(customer)
    
 
 
