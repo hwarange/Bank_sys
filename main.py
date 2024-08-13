@@ -4,20 +4,23 @@ class Account():
         self.account_id = account_id
         self.balance = balance
         self.customer_name = customer_name
+
+account_list = []
+num_of_accounts = 0
     
 def make_account():
     print('[계좌 계설]')
     id = input()
     name = input()
     money = input()
-    Account(id, money, name)
+    account_list.append(Account(id, money, name))
+   
 
 
 
 
 def main():
-    account = []
-    num_of_accounts = 0
+    
     
     """Main function to run the banking system."""
     while True:
