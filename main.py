@@ -2,23 +2,15 @@ import show_all_account_information
 import deposit_money
 import make_account
 import screen_set
+import withdraw_money
 
-
-class Account():
-    def __init__(self, account_id, balance, customer_name):
-        self.account_id = account_id
-        self.balance = balance
-        self.customer_name = customer_name
-
-    def get_account_id(self):
-        return self.account_id
     
 account = []
 num_of_accounts = 0
 
 
-
-
+def menu_input():
+    int(input('선택: '))
 
 
 def main():
@@ -31,13 +23,13 @@ def main():
         print()
 
         if choice == 1:
-            make_account()
+            make_account.make_account()
         elif choice == 2:
-            deposit_money()
+            deposit_money.deposit_money()
         elif choice == 3:
-            withdraw_money()
+            withdraw_money.withdraw_money()
         elif choice == 4:
-            show_all_account_information()
+            show_all_account_information.show_all_account_information()
         elif choice == 5:
             print("프로그램을 종료합니다.")
             break
