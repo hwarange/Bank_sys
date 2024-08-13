@@ -1,3 +1,8 @@
+import show_all_account_information
+import deposit_money
+import make_account
+import screen_set
+
 
 class Account():
     def __init__(self, account_id, balance, customer_name):
@@ -16,15 +21,12 @@ num_of_accounts = 0
 
 
 
-
-
-
 def main():
 
     
     """Main function to run the banking system."""
     while True:
-        show_menu()
+        screen_set.show_menu()
         choice = menu_input()
         print()
 
