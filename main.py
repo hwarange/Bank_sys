@@ -4,6 +4,12 @@ class Account():
         self.account_id = account_id
         self.balance = balance
         self.customer_name = customer_name
+
+    def get_account_id(self):
+        return self.account_id
+    
+
+
     
 
 
