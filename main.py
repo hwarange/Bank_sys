@@ -4,7 +4,18 @@ class Account():
         self.account_id = account_id
         self.balance = balance
         self.customer_name = customer_name
+
+    def get_account_id(self):
+        return self.account_id
     
+account = []
+num_of_accounts = 0
+
+def show_all_account_information():
+    for i in account:
+        print(f'계좌ID: {i.account_id}')
+        print(f'이    름: {i.customer_name}')
+        print(f'잔    액: {i.balance}')
 
 
 
@@ -13,8 +24,7 @@ class Account():
 
 
 def main():
-    account = []
-    num_of_accounts = 0
+
     
     """Main function to run the banking system."""
     while True:
