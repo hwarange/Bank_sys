@@ -8,8 +8,18 @@ class Account():
     def get_account_id(self):
         return self.account_id
     
+account = []
+num_of_accounts = 0
 
-
+def deposit_money():
+    print('[입    금]')
+    id = input('계좌ID: ')
+    for i in range(len(account)):
+        if account[i].account_id == id:
+            money = input('입금액: ')
+            account[i].balance -= money
+        else:
+            print('유효하지 않는 ID입니다.')
     
 
 
@@ -19,8 +29,7 @@ class Account():
 
 
 def main():
-    account = []
-    num_of_accounts = 0
+
     
     """Main function to run the banking system."""
     while True:
