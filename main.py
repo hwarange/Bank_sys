@@ -5,9 +5,12 @@ class Account():
         self.balance = balance
         self.customer_name = customer_name
     
-
-
-
+def make_account():
+    print('[계좌 계설]')
+    id = input()
+    name = input()
+    money = input()
+    Account(id, money, name)
 
 
 
